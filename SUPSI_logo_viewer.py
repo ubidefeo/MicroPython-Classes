@@ -1,8 +1,9 @@
+# for this example you will need to copy the file
+# logo_supsi.py onto the board's storage 
 from machine import I2C
 from time import sleep_ms
 
 import sh1107
-import framebuf
 from logo_supsi import logo
 
 invert = False
