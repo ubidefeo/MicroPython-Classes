@@ -1,4 +1,6 @@
-from program import *
+from arduino import *
+from arduino_utils import ArduinoPin as Pin
+from arduino_utils import *
 import sys
 setup()
 
