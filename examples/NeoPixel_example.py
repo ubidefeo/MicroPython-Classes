@@ -1,12 +1,16 @@
-import machine, neopixel
+from machine import Pin
 from time import sleep
-# PIXEL_PIN   = machine.Pin(21, machine.Pin.OUT)
+import neopixel
+
 PIXEL_NUMBER = 24
-np = neopixel.NeoPixel(machine.Pin(21), PIXEL_NUMBER)
+np = neopixel.NeoPixel(Pin(21), PIXEL_NUMBER)
+
 purple = (200, 0, 200)
 black = (0, 0, 0)
+
 np.fill(black)
 np.write()
+
 def ringUp():
     for i in range(0, PIXEL_NUMBER):
         np[i] = purple
