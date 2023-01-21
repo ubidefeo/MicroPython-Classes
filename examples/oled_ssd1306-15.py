@@ -15,7 +15,7 @@ old_coords = Point(64, 32)
 new_coords = Point(64, 32)
 # old_coords = ["x": 0, "y":0]
 # new_coords = ["x": 0, "y": 0]
-i2cbus = SoftI2C(scl = Pin(28), sda = Pin(29), freq = 200000)
+i2cbus = SoftI2C(scl = Pin(13), sda = Pin(12), freq = 100000)
 print(i2cbus)
 oled = ssd1306.SSD1306_I2C(DISPLAY_WIDTH, DISPLAY_HEIGHT, i2cbus)
 # oled.fill(0)

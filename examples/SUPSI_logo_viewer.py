@@ -4,7 +4,7 @@ from machine import I2C
 from time import sleep_ms
 
 import sh1107
-from logo_supsi import logo
+from supsi_logo import logo
 
 invert = False
 

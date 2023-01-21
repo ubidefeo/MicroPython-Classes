@@ -1,4 +1,4 @@
-import time
+from time import sleep_ms
 from lsm6dsox import LSM6DSOX as IMU
 from machine import I2C
 
@@ -16,3 +16,7 @@ def read_values():
     print(f'x: {gyro_x:>8.3f}')
     print(f'y: {gyro_y:>8.3f}')
     print(f'z: {gyro_z:>8.3f}')
+
+while True:
+    read_values()
+    sleep_ms(100)
