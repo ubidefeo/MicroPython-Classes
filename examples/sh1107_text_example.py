@@ -7,8 +7,9 @@ i2cbus = I2C(0)
 oled = sh1107.SH1107_I2C(128, 128, i2cbus)
 oled.poweron()
 
-oled.text('- Hi, Arduino!', 0, 0, 1)
-oled.text('- MicroPython!!!', 0, 12, 1)
+oled.text('    Arduino!', 0, 0, 1)
+oled.text('     loves', 0, 12, 1)
+oled.text('  MicroPython', 0, 24, 1)
 oled.show()
 
 while(1):
